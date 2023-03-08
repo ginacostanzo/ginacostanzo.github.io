@@ -4,25 +4,53 @@
 <head>
     <link href="./styles.css" rel="stylesheet">
     <title>Gina Costanzo</title>
+    <script src="https://kit.fontawesome.com/5093c94783.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Tilt+Warp&family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <a href="#header"><button id="jump-to-top" aria-label="jump to top of page">^</button></a>
+    <header id="header">
         <nav>
             <ul>
-                <li><a href="#" id="about-link">Home</a></li>
-                <li><a href="#" id="projects-link">Projects</a></li>
-                <li id="resume-link">Resume</li>
+                <li id="about-link" class="active"><a href="#" title="Home">Home</a></li>
+                <li id="projects-link"><a href="#" title="Projects">Projects</a></li>
+                <li id="resume-link"><a href="#" title="Resume">Resume</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="contact">
-            Email address & github link & linkedin if i make one
+            <ul>
+                <li>
+                    <a href="https://github.com/ginacostanzo" title="GitHub">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:ginacostanzo13@gmail.com" title="Email me">
+                        <i class="fa-regular fa-envelope fa-2x" aria-label="email me link"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin fa-2x" title="LinkedIn"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
         </section>
         <section id="about">
-            grid with intro to me on left, photo on right with maybe zoomed in code as the background?
-        Skills:
+            <div id="grid-left">
+                <h1>Gina Costanzo</h1>
+                <h2>About Me</h2>
+                <h3>Skills</h3>
+            </div>
+            <div id="grid-right">
+                <img src="#" alt="Gina Costanzo">
+            </div>
         </section>
         <section id="projects">
             This is the projects section
@@ -30,7 +58,11 @@
         <section id="resume">
             This is the resume section
         </section>
-    </main>
+        </main>
+        <footer>
+            &copy; Gina Costanzo 2023
+        </footer>
+    </section>
     <script src="./index.js"></script>
 </body>
 </html>
