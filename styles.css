@@ -127,6 +127,10 @@ nav a:visited {
     margin-right: 5%;
 }
 
+#mobile_img {
+    display: none;
+}
+
 #grid-left {
     display: flex;
     flex-direction: column;
@@ -173,3 +177,24 @@ nav a:visited {
     color: darkolivegreen;
 }
 /* Resume Section */
+
+
+
+
+@media only screen and (max-width: 740px) {
+    #about {
+        grid-template-columns: 100% auto;
+    }
+
+    #grid-right {
+        display: none;
+    }
+
+    #mobile_img {
+        display: block;
+    }
+
+    #projects-grid {
+        display: block;
+    }
+}
