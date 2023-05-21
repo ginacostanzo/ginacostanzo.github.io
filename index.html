@@ -16,9 +16,9 @@
     <header id="header">
         <nav>
             <ul>
-                <li id="about-link" class="active"><a href="#" title="Home">Home</a></li>
-                <li id="projects-link"><a href="#" title="Projects">Projects</a></li>
-                <li id="resume-link"><a href="#" title="Resume">Resume</a></li>
+                <li id="about-link" class="active"><a href="./index.html" title="Home">Home</a></li>
+                <li id="projects-link"><a href="./projects.html" title="Projects">Projects</a></li>
+                <li id="resume-link"><a href="./resume.html" title="Resume">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -48,72 +48,43 @@
                 <h1>Gina Costanzo</h1>
                 <img id="mobile_img" src="#" alt="Gina Costanzo">
                 <h2>Software Developer</h2>
-                <h3>Skills</h3>
-                <p>JS, HTML, CSS, ...</p>
+                <h3>Technical Skills</h3>
+                <table>
+                    <tr>
+                        <td><i class="fa-brands fa-react" style="color: #000000;"></i> React</td>
+                        <td><i class="fa-brands fa-square-js" style="color: #000000;"></i> JavaScript</td>
+                        <td><i class="fa-brands fa-python" style="color: #000000;"></i> Python</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-brands fa-github" style="color: #000000;"></i> GitHub</td>
+                        <td><i class="fa-solid fa-code-branch" style="color: #000000;"></i> Git</td>
+                        <td>Redux</td>
+                    </tr>
+                    <tr>
+                        <td>Django</td>
+                        <td>Flask</td>
+                        <td>SQLite</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-brands fa-bootstrap" style="color: #000000;"></i> Bootstrap</td>
+                        <td><i class="fa-brands fa-css3-alt" style="color: #000000;"></i> CSS</td>
+                        <td><i class="fa-brands fa-html5" style="color: #000000;"></i> HTML</td>
+                    </tr>
+                </table>
                 <br>
-                <h3>Certificates</h3>
+                <h3>Certifications & Training</h3>
                 <ul>
-                    <li>Full Stack Developer - Codecademy</li>
-                    <li>Harvard's CS50W: Web Programming with Python & JavaScript</li>
-                    <li>Harvard's CS50P: Intro to Python</li>
-                    <li>Harvard's CS50X: Intro to Computer Science</li>
+                    <li>Full Stack Web Development - Codecademy 2023</li>
+                    <li>CS50W - Web Programming with Python and JavaScript, Harvard University 2022</li>
+                    <li>CS50P - Introduction to Python Programming, Harvard University 2022</li>
+                    <li>CS50X - Introduction to Computer Science, Harvard University 2022</li>
                 </ul>
             </div>
             <div id="grid-right">
                 <img src="./images/headshot.jpeg" alt="Gina Costanzo Profile Photo">
             </div>
         </section>
-        <section id="projects">
-            <h1>Projects</h1>
-            <section id="projects-grid">
-                <div class="project">
-                    <h2>The Best of Reddit</h2>
-                    <img src="./images/reddit.png">
-                    <h3>Project for Codecademy</h3>
-                    <p>A React web app using Redux for state management</p>
-                    <p>The Best of Reddit web app uses the Reddit API to fetch posts from the most popular pages and subreddits and allows the user to search posts.</p>
-                    <p><a href="https://the-best-of-reddit.netlify.app/">Live Site</a> // <a href="https://github.com/ginacostanzo/Reddit-Client-Portfolio-Project">GitHub Repo</a></p>
-                </div>
-                <div class="project">
-                    <h2>Traveler</h2>
-                    <img src="./images/traveler.png">
-                    <h3>Final Project for CS50W</h3>
-                    <p>A Django web app created using Python & SQLite for the backend and HTML, CSS, and JavaScript for the frontend.</p>
-                    <p>The Traveler web app allows users to upload different travel itineraries and then view the itineraries others have uploaded to help plan their next trip.</p>
-                    <p><a href="https://youtu.be/4BfwX2Xj0z0">Video Walkthrough</a> // <a href="https://github.com/ginacostanzo/CS50W-Final">GitHub Repo</a></p>
-                </div>
-                <div class="project">
-                    <h2>The Cocktail Codex</h2>
-                    <img src="./images/cocktail-codex.png">
-                    <h3>Final Project for CS50X</h3>
-                    <p>A Flask web app created using Python & SQLite for the backend and HTML, CSS, and JavaScript for the frontend.</p>
-                    <p>The Cocktail Codex web app allows users to build their home bar online. They can select the ingredients they have on hand, save favorite recipes, and see what recipes they can currently make with the ingredients they have.</p>
-                    <p><a href="https://www.youtube.com/watch?v=NEvA0XV-UEI">Video Walkthrough</a> // <a href="https://github.com/ginacostanzo/CS50X-Final">GitHub Repo</a></p>
-                </div>
-                <div class="project">
-                    <h2>Hangman</h2>
-                    <img src="./images/hangman.png">
-                    <h3>Final Project for CS50P</h3>
-                    <p>A Python app to be run in the command line. Allows users to choose a prepared list of words or upload their own words.</p>
-                    <p><a href="https://youtu.be/okdtd5jLeWE">Video Walkthrough</a> // <a href="https://github.com/ginacostanzo/Hangman">GitHub Repo</a></p>
-                </div>
-                <div class="project">
-                    <h2>Fake Business Website</h2>
-                    <img src="./images/fake-business.png">
-                    <h3>Project for Codecademy</h3>
-                    <p>A basic website using HTML and CSS for a made up yoga studio.</p>
-                    <p><a href="https://fake-yoga-studio.netlify.app/">Live Site</a> // <a href="https://github.com/ginacostanzo/Fake-Business-Website">GitHub Repo</a></p>
-                </div>
-            </section>
-        </section>
-        <section id="resume">
-            <h1>Resume</h1>
-            <p><a href="./resume.pdf" target="_blank">Download Resume</a></p>
-            <iframe src="./resume.pdf" width="90%" height="500px">
-            </iframe>
-        </section>
         </main>
-    </section>
     <script src="./index.js"></script>
 </body>
 </html>
