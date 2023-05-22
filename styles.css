@@ -293,8 +293,4 @@ nav a:visited {
     header {
         background-image: linear-gradient(to left, darkgray, white);
     }
-
-    .resumeImage {
-        width: 80vw;
-    }
 }
