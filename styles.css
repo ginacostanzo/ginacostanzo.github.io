@@ -53,6 +53,14 @@ h2 {
     background-color: darkgray;
 }
 
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
 /* Header */
 header {
     margin-bottom: 2%;
@@ -129,12 +137,15 @@ nav a:visited {
 
 /* About Section */
 #about {
-    display: grid;
-    grid-template-columns: 3fr 1.25fr;
     height: 28rem;
     margin-right: 5%;
     overflow: scroll;
     position: relative;
+}
+
+#aboutGrid {
+    display: grid;
+    grid-template-columns: 3fr 1.75fr;
 }
 
 #mobile_img {
@@ -144,7 +155,6 @@ nav a:visited {
 #grid-left {
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
 }
 
@@ -152,17 +162,26 @@ nav a:visited {
     width: 100%;
 }
 
-#grid-left table {
+.gridSkills {
     width: 75%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 10px;
-    text-align: center;
-}
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 10px 0;
+  }  
 
 #grid-right {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+}
+
+#trainingList {
+    list-style-position: inside;
+    margin-top: 10px;
+}
+
+#trainingList li {
+    margin-bottom: 7px;
 }
 
 /* Projects Section */
@@ -208,10 +227,33 @@ nav a:visited {
     height: 500px;
 }
 
+@media only screen and (max-width: 1014px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 2.75rem;
+    }
+}
 
 @media only screen and (max-width: 740px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
     #about {
         grid-template-columns: 100% auto;
+    }
+
+    #about table {
+        display: none;
     }
 
     #grid-right {
@@ -222,7 +264,34 @@ nav a:visited {
         display: block;
     }
 
+    #about img {
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #projects-grid {
         display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    nav li {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    header {
+        background-image: none;
+    }
+
+    #resume-iframe {
+        width: 80vw;
     }
 }
