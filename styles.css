@@ -237,9 +237,17 @@ nav a:visited {
     }
 
     #about {
-        grid-template-columns: 100% auto;
         height: calc(100vh - 175px);
         overflow: scroll;
+        text-align: center;
+    }
+
+    #aboutGrid {
+        display: block;
+    }
+
+    #grid-left {
+        width: 100%;
     }
 
     #grid-right {
@@ -257,6 +265,7 @@ nav a:visited {
     }
     #projects {
         height: calc(100vh - 175px);
+        text-align: center;
     }
 
     #projects-grid {
@@ -265,6 +274,7 @@ nav a:visited {
 
     #resume {
         height: calc(100vh - 175px);
+        text-align: center;
     }
 
     .desktop {
