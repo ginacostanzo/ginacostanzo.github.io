@@ -293,4 +293,8 @@ nav a:visited {
     header {
         background-image: none;
     }
+
+    #resume-iframe {
+        zoom: .75;
+    }
 }
