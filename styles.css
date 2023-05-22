@@ -137,7 +137,7 @@ nav a:visited {
 
 /* About Section */
 #about {
-    height: 28rem;
+    height: calc(100vh - 85px);
     margin-right: 5%;
     overflow: scroll;
     position: relative;
@@ -188,7 +188,7 @@ nav a:visited {
 #projects {
     overflow: scroll;
     position: relative;
-    height: 28rem;
+    height: calc(100vh - 150px);
 }
 
 #projects-grid {
@@ -224,7 +224,12 @@ nav a:visited {
 #resume {
     overflow: scroll;
     position: relative;
-    height: 500px;
+    height: calc(100vh - 150px);
+}
+
+#resume-iframe {
+    width: 80vw;
+    height: calc(100vh - 295px);
 }
 
 @media only screen and (max-width: 1014px) {
@@ -250,10 +255,8 @@ nav a:visited {
 
     #about {
         grid-template-columns: 100% auto;
-    }
-
-    #about table {
-        display: none;
+        height: calc(100vh - 60px);
+        overflow: scroll;
     }
 
     #grid-right {
@@ -269,9 +272,16 @@ nav a:visited {
         margin-left: auto;
         margin-right: auto;
     }
+    #projects {
+        height: calc(100vh - 60px);
+    }
 
     #projects-grid {
         display: block;
+    }
+
+    #resume {
+        height: calc(100vh - 60px);
     }
 
     .desktop {
@@ -289,9 +299,5 @@ nav a:visited {
 
     header {
         background-image: none;
-    }
-
-    #resume-iframe {
-        width: 80vw;
     }
 }
