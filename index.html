@@ -24,7 +24,7 @@
     </header>
     <main>
         <section id="contact">
-            <ul>
+            <ul class="desktop">
                 <li>
                     <a href="https://github.com/ginacostanzo" title="GitHub">
                         <i class="fa-brands fa-github fa-2x"></i>
@@ -41,48 +41,75 @@
                     </a>
                 </li>
             </ul>
+            <ul class="mobile">
+                <li>
+                    <a href="https://github.com/ginacostanzo" title="GitHub">
+                        <i class="fa-brands fa-github fa-xl"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:ginacostanzo13@gmail.com" title="Email me">
+                        <i class="fa-regular fa-envelope fa-xl" aria-label="email me link"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin fa-xl" title="LinkedIn"></i>
+                    </a>
+                </li>
+            </ul>
         </section>
-        </section>
+        
         <section id="about">
+            <h1>Gina Costanzo</h1>
+            <section id="aboutGrid">
             <div id="grid-left">
-                <h1>Gina Costanzo</h1>
-                <img id="mobile_img" src="#" alt="Gina Costanzo">
+                <img id="mobile_img" src="./images/headshot.jpeg" alt="Gina Costanzo Profile Photo">
                 <h2>Software Developer</h2>
-                <h3>Technical Skills</h3>
-                <table>
-                    <tr>
-                        <td><i class="fa-brands fa-react" style="color: #000000;"></i> React</td>
-                        <td><i class="fa-brands fa-square-js" style="color: #000000;"></i> JavaScript</td>
-                        <td><i class="fa-brands fa-python" style="color: #000000;"></i> Python</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-brands fa-github" style="color: #000000;"></i> GitHub</td>
-                        <td><i class="fa-solid fa-code-branch" style="color: #000000;"></i> Git</td>
-                        <td>Redux</td>
-                    </tr>
-                    <tr>
-                        <td>Django</td>
-                        <td>Flask</td>
-                        <td>SQLite</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-brands fa-bootstrap" style="color: #000000;"></i> Bootstrap</td>
-                        <td><i class="fa-brands fa-css3-alt" style="color: #000000;"></i> CSS</td>
-                        <td><i class="fa-brands fa-html5" style="color: #000000;"></i> HTML</td>
-                    </tr>
-                </table>
+                <h3><u>Technical Skills</u></h3>
+                <div class="desktop gridSkills">
+                    <div><i class="fa-brands fa-react" style="color: #000000;"></i> React</div>
+                    <div><i class="fa-brands fa-square-js" style="color: #000000;"></i> JavaScript</div>
+                    <div><i class="fa-brands fa-python" style="color: #000000;"></i> Python</div>
+                    <div><i class="fa-brands fa-github" style="color: #000000;"></i> GitHub</div>
+                    <div><i class="fa-solid fa-code-branch" style="color: #000000;"></i> Git</div>
+                    <div>Redux</div>
+                    <div>Django</div>
+                    <div>Flask</div>
+                    <div>SQLite</div>
+                    <div><i class="fa-brands fa-bootstrap" style="color: #000000;"></i> Bootstrap</div>
+                    <div><i class="fa-brands fa-css3-alt" style="color: #000000;"></i> CSS</div>
+                    <div><i class="fa-brands fa-html5" style="color: #000000;"></i> HTML</div>
+                </div>                  
+                <section class="mobile">
+                    <ul>
+                        <li><i class="fa-brands fa-react" style="color: #000000;"></i> React</li>
+                        <li><i class="fa-brands fa-square-js" style="color: #000000;"></i> JavaScript</li>
+                        <li><i class="fa-brands fa-python" style="color: #000000;"></i> Python</li>
+                        <li><i class="fa-brands fa-github" style="color: #000000;"></i> GitHub</li>
+                        <li><i class="fa-solid fa-code-branch" style="color: #000000;"></i> Git</li>
+                        <li>Redux</li>
+                        <li>Django</li>
+                        <li>Flask</li>
+                        <li>SQLite</li>
+                        <li><i class="fa-brands fa-bootstrap" style="color: #000000;"></i> Bootstrap</li>
+                        <li><i class="fa-brands fa-css3-alt" style="color: #000000;"></i> CSS</li>
+                        <li><i class="fa-brands fa-html5" style="color: #000000;"></i> HTML</li>
+                    </ul>
+                </section>
                 <br>
-                <h3>Certifications & Training</h3>
-                <ul>
+                <h3><u>Certifications & Training</u></h3>
+                <ul id="trainingList">
                     <li>Full Stack Web Development - Codecademy 2023</li>
-                    <li>CS50W - Web Programming with Python and JavaScript, Harvard University 2022</li>
-                    <li>CS50P - Introduction to Python Programming, Harvard University 2022</li>
-                    <li>CS50X - Introduction to Computer Science, Harvard University 2022</li>
+                    <li>CS50W - Web Programming with Python and JavaScript, Harvard 2022</li>
+                    <li>CS50P - Introduction to Python Programming, Harvard 2022</li>
+                    <li>CS50X - Introduction to Computer Science, Harvard 2022</li>
                 </ul>
             </div>
             <div id="grid-right">
                 <img src="./images/headshot.jpeg" alt="Gina Costanzo Profile Photo">
             </div>
+        </section>
         </section>
         </main>
     <script src="./index.js"></script>
