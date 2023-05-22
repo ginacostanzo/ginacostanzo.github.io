@@ -17,7 +17,7 @@
             <ul>
                 <li id="about-link"><a href="./index.html" title="Home">Home</a></li>
                 <li id="projects-link"><a href="./projects.html" title="Projects">Projects</a></li>
-                <li id="resume-link"><a href="./resume.html" title="Resume">Resume</a></li>
+                <li id="resume-link" class="active"><a href="./resume.html" title="Resume">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -62,8 +62,12 @@
             <h1>Resume</h1>
             <p><a href="./resume.pdf" target="_blank">Download Resume</a></p>
             <br>
-            <iframe id="resume-iframe" src="./resume.pdf#toolbar=0">
+            <iframe class="desktop" id="resume-iframe" src="./resume.pdf#toolbar=0">
             </iframe>
+            <div class="mobile">
+                <img class="resumeImage" src="./images/resume1.png">
+                <img class="resumeImage" src="./images/resume2.png">
+            </div>
         </section>
         </main>
 </body>
