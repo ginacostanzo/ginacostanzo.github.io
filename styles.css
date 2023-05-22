@@ -255,7 +255,8 @@ nav a:visited {
 
     #about {
         grid-template-columns: 100% auto;
-        height: calc(100vh - 60px);
+        height: calc(100vh - 125px);
+        padding-bottom: 100px;
         overflow: scroll;
     }
 
@@ -273,7 +274,7 @@ nav a:visited {
         margin-right: auto;
     }
     #projects {
-        height: calc(100vh - 60px);
+        height: calc(100vh - 150px);
     }
 
     #projects-grid {
@@ -281,7 +282,7 @@ nav a:visited {
     }
 
     #resume {
-        height: calc(100vh - 60px);
+        height: calc(100vh - 150px);
     }
 
     .desktop {
