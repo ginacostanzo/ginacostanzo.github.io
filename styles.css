@@ -36,23 +36,6 @@ h2 {
     padding-bottom: 10px;;
 }
 
-#jump-to-top {
-    height: 50px;
-    width: 50px;
-    font-size: 2rem;
-    border-radius: 10px;
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-    z-index: 1;
-    display: none;
-}
-
-#jump-to-top:hover {
-    cursor: pointer;
-    background-color: darkgray;
-}
-
 .mobile {
     display: none;
 }
@@ -255,7 +238,7 @@ nav a:visited {
 
     #about {
         grid-template-columns: 100% auto;
-        height: calc(100vh - 125px);
+        height: calc(100vh - 175px);
         padding-bottom: 100px;
         overflow: scroll;
     }
@@ -274,7 +257,7 @@ nav a:visited {
         margin-right: auto;
     }
     #projects {
-        height: calc(100vh - 150px);
+        height: calc(100vh - 175px);
     }
 
     #projects-grid {
@@ -282,7 +265,7 @@ nav a:visited {
     }
 
     #resume {
-        height: calc(100vh - 150px);
+        height: calc(100vh - 175px);
     }
 
     .desktop {
